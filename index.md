@@ -52,7 +52,7 @@ L’objectif de ce projet était d’analyser les données d’Olist, une platef
 2.  Exploration et nettoyage des données
 3.  Analyse ciblée sur :
   -  Comportement des clients : fréquence d’achat, panier moyen
-  -  Performance produit : meilleures ventes, satisfaction A
+  -  Performance produit : meilleures ventes, satisfaction
   -  Analyse géographique : régions les plus rentables
   -  Suivi des délais et de la satisfaction client
 
@@ -74,15 +74,15 @@ L’objectif de ce projet était d’analyser les données d’Olist, une platef
   
 ---
 
-## 🌟 Projet 2 : Analyse Look E-commerce avec Power BI
+## 🌟 Projet 2 : Airbnb Paris: Analyse de la Performance des Locations
 
 ### 🧩 Contexte et objectifs
 Dans le cadre d’un atelier orienté storytelling data, l’objectif était d’identifier les facteurs influençant le taux de location sur Airbnb Paris, en analysant les disponibilités, prix, types de logement, et indicateurs de qualité (notes, temps de réponse…).
 
 ### 📊 Données utilisées
 - 2 tables :
-  .  listings: 1 ligne par location avec informations statiques (type, score, temps de réponse…)
-  .  calendar: 1 ligne par jour et par logement avec prix, disponibilité
+  -  listings: 1 ligne par location avec informations statiques (type, score, temps de réponse…)
+  -  calendar: 1 ligne par jour et par logement avec prix, disponibilité
 - Données analysées dans BigQuery et visualisées dans Looker Studio
 - Période : année complète pour Paris
 
@@ -97,9 +97,9 @@ Dans le cadre d’un atelier orienté storytelling data, l’objectif était d�
 -  Exploration des données brutes dans BigQuery
 -  Jointure des tables sur listing_id pour croiser données statiques et dynamiques
 -  Création de métriques par logement :
--  Taux d’occupation (% de jours réservés)
--  Prix moyen par nuit
--  Score moyen et temps de réponse
+  -  Taux d’occupation (% de jours réservés)
+  -  Prix moyen par nuit
+  -  Score moyen et temps de réponse
 -  Étude de la corrélation entre performance locative et ces indicateurs
 -  Création d’un dashboard Looker Studio pour raconter visuellement l’analyse
 
@@ -108,7 +108,7 @@ Dans le cadre d’un atelier orienté storytelling data, l’objectif était d�
 -  Le taux d’occupation est fortement corrélé à un temps de réponse rapide de l’hôte
 -  Les logements notés au-dessus de 9/10 ont un revenu potentiel 30 % supérieur à la moyenne
 -  Les hausses de prix ne réduisent pas nécessairement le taux de location s’il y a une bonne note et un bon emplacement
-https://lookerstudio.google.com/reporting/13471aa4-8bde-4b4b-8135-d159445b3642 
+🔗 Dashboard interactif : [https://lookerstudio.google.com/reporting/13471aa4-8bde-4b4b-8135-d159445b3642](https://lookerstudio.google.com/reporting/13471aa4-8bde-4b4b-8135-d159445b3642)
 
 ### 💡 Recommandations
 -  Former les hôtes à améliorer leur réactivité pour augmenter leurs chances de réservation
@@ -124,14 +124,14 @@ https://lookerstudio.google.com/reporting/13471aa4-8bde-4b4b-8135-d159445b3642
 
 ---
 
-## 🌟 Projet 3 : Analyse Airbnb Paris (BigQuery + Looker Studio)
+## 🌟 Projet 3 : Analyse des données e-commerce avec Power BI (The Look Dataset)
 
 ### 🧩 Contexte et objectifs
 Dans ce projet, nous avons analysé un dataset complet simulant les opérations d’un site e-commerce de prêt-à-porter ("The Look") pour en extraire des insights clés sur les ventes, le comportement client, les performances des produits et l’efficacité des campagnes marketing.
 
 ### 📊 Données utilisées
 - Base de données multi-tables :
- .  Commandes, produits, utilisateurs, inventaire, événements web, marketing, etc.
+    -  Commandes, produits, utilisateurs, inventaire, événements web, marketing, etc.
 - Source : BigQuery → connexion Power BI Desktop
 - Volume : plusieurs dizaines de milliers de lignes
 - Visualisation et modélisation dans Power BI
