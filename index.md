@@ -4,7 +4,8 @@
 **Profil** : Data Analyst | Communication & Stratégie | Reconversion professionnelle  
 **Localisation** : Bordeaux – France  
 **Email** : tazi.hasna@orange.fr  
-**LinkedIn** : [www.linkedin.com/in/hasna-tazi-fr](https://www.linkedin.com/in/hasna-tazi-fr)  
+**LinkedIn** : [www.linkedin.com/in/hasna-tazi-fr](https://www.linkedin.com/in/hasna-tazi-fr)
+**GitHub** : [hasna33.github.io/portfolio-data-analyst/](https://hasna33.github.io/portfolio-data-analyst/)
 
 ---
 
