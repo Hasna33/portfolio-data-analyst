@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project 2: Airbnb Paris – Rental Performance Analysis</title>
+</head>
+<body>
+<p><a href="index-en.html">⬅️ Back to home</a></p>
+
+  <h1>🌟 Project 2: Airbnb Paris – Rental Performance Analysis</h1>
+
+  <h2>🥉 Context and Objectives</h2>
+  <p>This project was part of a storytelling data workshop. The goal was to identify the factors influencing rental performance on Airbnb Paris by analyzing availability, pricing, property types, and quality indicators (ratings, response times…).</p>
+
+  <h2>📊 Data Used</h2>
+  <ul>
+    <li>2 tables:</li>
+    <ul>
+      <li><code>listings</code>: 1 row per listing with static information (type, score, response time…)</li>
+      <li><code>calendar</code>: 1 row per day and per listing with price and availability</li>
+    </ul>
+    <li>Data analyzed in BigQuery and visualized with Looker Studio</li>
+    <li>Timeframe: full year in Paris</li>
+  </ul>
+
+  <h2>🛠️ Technical Skills Used</h2>
+  <ul>
+    <li>SQL joins between <code>listings</code> and <code>calendar</code></li>
+    <li>Aggregations per listing (occupancy rate, average price…)</li>
+    <li>Creation of key metrics (occupancy rate, potential revenue)</li>
+    <li>Dynamic visual representations in Looker Studio (charts, maps, annotations)</li>
+    <li>Analytical storytelling focused on business insights</li>
+  </ul>
+
+  <h2>🧪 Analytical Approach</h2>
+  <ul>
+    <li>Data exploration in BigQuery</li>
+    <li>Joining tables on <code>listing_id</code> to combine static and dynamic data</li>
+    <li>Creation of per-listing metrics:</li>
+    <ul>
+      <li>Occupancy rate (% of days booked)</li>
+      <li>Average nightly price</li>
+      <li>Average score and host response time</li>
+    </ul>
+    <li>Correlation analysis between rental performance and those indicators</li>
+    <li>Building a Looker Studio dashboard to visually narrate the findings</li>
+  </ul>
+
+  <h2>📊 Key Insights</h2>
+  <ul>
+    <li>“Entire home” listings have higher occupancy than “private rooms”</li>
+    <li>Occupancy rate is strongly correlated with fast host response time</li>
+    <li>Listings rated above 9/10 have a potential revenue 30% higher than the average</li>
+    <li>Higher prices do not necessarily reduce booking rate if rating and location are good</li>
+  </ul>
+  <p>🔗 Interactive Dashboard: <a href="https://lookerstudio.google.com/reporting/13471aa4-8bde-4b4b-8135-d159445b3642" target="_blank">View the report</a></p>
+
+  <h2>💡 Recommendations</h2>
+  <ul>
+    <li>Train hosts to improve responsiveness to increase booking chances</li>
+    <li>Adjust pricing dynamically during low seasons</li>
+    <li>Highlight guest reviews and ratings to boost listing visibility</li>
+  </ul>
+
+  <h2>🎓 What I Learned</h2>
+  <ul>
+    <li>Effectively joining and combining multiple data sources in BigQuery</li>
+    <li>Exploring simple yet relevant correlations from partial data</li>
+    <li>Telling a clear business story through visuals in Looker Studio</li>
+    <li>Working in pairs on a concrete analytical problem and presenting it orally</li>
+  </ul>
+</body>
+</html>
