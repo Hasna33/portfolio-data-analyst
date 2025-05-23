@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Projet 2 : Airbnb Paris</title>
+</head>
+<body>
+<p><a href="index.html">⬅️ Retour à l'accueil</a></p>
+
+  <h1>🌟 Projet 2 : Airbnb Paris: Analyse de la Performance des Locations</h1>
+
+  <h2>🥉 Contexte et objectifs</h2>
+  <p>Dans le cadre d’un atelier orienté storytelling data, l’objectif était d’identifier les facteurs influençant le taux de location sur Airbnb Paris, en analysant les disponibilités, prix, types de logement, et indicateurs de qualité (notes, temps de réponse…).</p>
+
+  <h2>📊 Données utilisées</h2>
+  <ul>
+    <li>2 tables :</li>
+    <ul>
+      <li><code>listings</code> : 1 ligne par location avec informations statiques (type, score, temps de réponse…)</li>
+      <li><code>calendar</code> : 1 ligne par jour et par logement avec prix, disponibilité</li>
+    </ul>
+    <li>Données analysées dans BigQuery et visualisées dans Looker Studio</li>
+    <li>Période : année complète pour Paris</li>
+  </ul>
+
+  <h2>🛠️ Compétences techniques mobilisées</h2>
+  <ul>
+    <li>Jointures SQL entre <code>listings</code> et <code>calendar</code></li>
+    <li>Agrégations par logement (taux d’occupation, prix moyen…)</li>
+    <li>Création d’indicateurs clés (occupation rate, revenus potentiels)</li>
+    <li>Représentations visuelles dynamiques dans Looker Studio (courbes, cartes, annotations)</li>
+    <li>Storytelling analytique orienté “business insights”</li>
+  </ul>
+
+  <h2>🧪 Démarche analytique</h2>
+  <ul>
+    <li>Exploration des données brutes dans BigQuery</li>
+    <li>Jointure des tables sur <code>listing_id</code> pour croiser données statiques et dynamiques</li>
+    <li>Création de métriques par logement :</li>
+    <ul>
+      <li>Taux d’occupation (% de jours réservés)</li>
+      <li>Prix moyen par nuit</li>
+      <li>Score moyen et temps de réponse</li>
+    </ul>
+    <li>Étude de la corrélation entre performance locative et ces indicateurs</li>
+    <li>Création d’un dashboard Looker Studio pour raconter visuellement l’analyse</li>
+  </ul>
+
+  <h2>📊 Résultats / Insights clés</h2>
+  <ul>
+    <li>Les logements “entire home” ont un taux d’occupation plus élevé que les “private rooms”</li>
+    <li>Le taux d’occupation est fortement corrélé à un temps de réponse rapide de l’hôte</li>
+    <li>Les logements notés au-dessus de 9/10 ont un revenu potentiel 30 % supérieur à la moyenne</li>
+    <li>Les hausses de prix ne réduisent pas nécessairement le taux de location s’il y a une bonne note et un bon emplacement</li>
+  </ul>
+  <p>🔗 Dashboard interactif : <a href="https://lookerstudio.google.com/reporting/13471aa4-8bde-4b4b-8135-d159445b3642" target="_blank">Voir le rapport</a></p>
+
+  <h2>💡 Recommandations</h2>
+  <ul>
+    <li>Former les hôtes à améliorer leur réactivité pour augmenter leurs chances de réservation</li>
+    <li>Optimiser les tarifs pendant les périodes creuses grâce à une stratégie dynamique de pricing</li>
+    <li>Valoriser les notes et avis clients pour mieux classer les logements dans les résultats de recherche</li>
+  </ul>
+
+  <h2>🎓 Ce que j’ai appris</h2>
+  <ul>
+    <li>Manipuler et croiser efficacement plusieurs sources de données dans BigQuery</li>
+    <li>Explorer des corrélations simples mais pertinentes à partir de données partielles</li>
+    <li>Raconter une histoire business claire via des visualisations dans Looker Studio</li>
+    <li>Travailler en binôme sur une problématique analytique concrète avec restitution orale</li>
+  </ul>
+</body>
+</html>
