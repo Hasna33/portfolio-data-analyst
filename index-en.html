@@ -99,26 +99,48 @@
       margin-top: 40px;
     }
   </style>
-  <script>
-    function changeLanguage(select) {
-      const lang = select.value;
-      if (lang) {
-        window.location.href = lang;
-      }
+  <style>
+  .lang-select select {
+    font-size: 14px;
+    padding: 6px;
+    border-radius: 6px;
+    background: #fff;
+    color: #0f4c81;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const langSelector = document.getElementById("langSelect");
+    const currentPage = window.location.pathname;
+
+    if (currentPage.includes("index-en")) {
+      langSelector.value = "index-en.html";
+    } else {
+      langSelector.value = "index.html";
     }
-  </script>
+  });
+
+  function changeLanguage(select) {
+    const lang = select.value;
+    if (lang) {
+      window.location.href = lang;
+    }
+  }
+</script>
+
 </head>
 <body>
 
 <header>
   <h1>Hasna TAZI – Data Analyst</h1>
   <div class="lang-select">
-    <select onchange="changeLanguage(this)">
-      <option value="">🌍 Language</option>
-      <option value="index.html">🇫🇷 French</option>
-      <option value="index-en.html">🇬🇧 English</option>
-    </select>
-  </div>
+  <select id="langSelect" onchange="changeLanguage(this)">
+    <option value="index.html">🇫🇷 Français</option>
+    <option value="index-en.html">🇬🇧 English</option>
+  </select>
+</div>
+
 </header>
 
 <nav>
