@@ -107,6 +107,16 @@
       }
     }
   </script>
+  <style>
+  .lang-select select {
+    font-size: 14px;
+    padding: 6px;
+    border-radius: 6px;
+    background: #fff;
+    color: #0f4c81;
+  }
+</style>
+
 </head>
 <body>
 
@@ -115,7 +125,7 @@
   <div class="lang-select">
     <select onchange="changeLanguage(this)">
       <option value="">🌍 Langue</option>
-      <option value="index.html">🇫🇷 Français</option>
+      <option value="index.html" selected>🇫🇷 Français</option>
       <option value="index-en.html">🇬🇧 English</option>
     </select>
   </div>
